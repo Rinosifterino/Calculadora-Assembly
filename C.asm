@@ -1,11 +1,3 @@
-;r = 64bit & e = 32bit
-;rax/eax define o tipo de syscall
-;rdi/edi primeiro parametro da syscall(0 = stdin, 1 = stdout)
-;rsi/rsi segundo parametro da syscall 
-;rdx/edx terçeiro parametro da syscall
-;resb = mallock
-
-
 section .data
     erro_msg db "Erro: Divisao por zero!", 10, 0 
     menu_msg db "Escolha a operacao:", 10
@@ -618,13 +610,3 @@ resultado:
     call print_string
 
     jmp _start  ; Reinicia o programa
-
-
-
-;Integrantes:
-;João Lucas Gomes – 2312130197
-;Arthur Brito     - 2312130001
-;Raul Finageiv    – 2312130194
-;Luan Menezes     - 2312130224
-;Lucas Gonçalves  - 2312130198
-;Vitor Hugo       - 2312130182
